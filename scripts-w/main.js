@@ -7,8 +7,9 @@ var guessCount = 1;
 var resetButton;
 question.textContent = String(2**randomNumber);
 function checkAns() {
+    guessCount += 1;
     var ans = Number(inputAns.value);
-    if (guessCount === 3){
+    if (guessCount === 3 & ans !== randomNumber){
         version.textContent ="Хахахаха! Ты проиграл!";
         version.style.backgroundColor = 'red';
         GameOver();
@@ -21,7 +22,6 @@ function checkAns() {
             version.textContent = 'Неверно, 2 в степени ' + String(ans) + ' это ' + String(2 ** ans);
         }
     }
-    guessCount += 1;
     inputAns.value= '';
     inputAns.focus();
 }
