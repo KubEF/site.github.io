@@ -43,7 +43,7 @@ function resetGame() {
     version.textContent = '';
     version.style.backgroundColor = 'orange';
     resetButton.parentNode.removeChild(resetButton);
-    randomNumber = Math.floor(Math.random() * 15) + 1;
+    randomNumber = Math.floor(Math.random() * 30) + 10;
     question.textContent = String(2**randomNumber);
 }
 submit.addEventListener("click", checkAns);
