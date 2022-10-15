@@ -1,4 +1,4 @@
-var randomNumber = Math.floor(Math.random() * 30) + 1;
+var randomNumber = Math.floor(Math.random() * 30) + 10;
 var question = document.querySelector('.number');
 var inputAns = document.querySelector('.inp');
 var submit = document.querySelector(".submit");
