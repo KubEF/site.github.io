@@ -45,6 +45,7 @@ function resetGame() {
     resetButton.parentNode.removeChild(resetButton);
     randomNumber = Math.floor(Math.random() * 30) + 10;
     question.textContent = String(2**randomNumber);
+    inputAns.focus();
 }
 submit.addEventListener("click", checkAns);
 
